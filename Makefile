@@ -10,4 +10,5 @@ data/raw/inflation.rds: R/download_inflation.R
 ### Rmd's ###
 include .repro/Makefile_Rmds
 
-repro::use_make_publish()
+publish/: inflation.pdf
+include .repro/Makefile_publish
